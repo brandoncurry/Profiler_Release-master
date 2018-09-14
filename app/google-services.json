@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "337175148404",
+    "firebase_url": "https://profiler-6ca38.firebaseio.com",
+    "project_id": "profiler-6ca38",
+    "storage_bucket": "profiler-6ca38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337175148404:android:4897358380c379ae",
+        "android_client_info": {
+          "package_name": "com.brandoncurry.profiler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337175148404-fmvh8e5rrkde1nhijnlvqjdos8g0hnfe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brandoncurry.profiler",
+            "certificate_hash": "35c1065e5300b058110e45d3100ebf83b69669b5"
+          }
+        },
+        {
+          "client_id": "337175148404-aa4p5sac3n3g70f9iqt644forhapdsaa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQXGacTzj51kYZgs0YV8QGrP-s4P8u3wo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337175148404-aa4p5sac3n3g70f9iqt644forhapdsaa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

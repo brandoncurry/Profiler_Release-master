@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brandoncurry.profiler.ui.landing.RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/svRegister"
+        android:fillViewport="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:id="@+id/ivProfilePhoto" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:ems="10"
+                android:layout_marginTop="31dp"
+                android:id="@+id/etUserName"
+                android:layout_below="@+id/ivProfilePhoto"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="Password"
+                android:layout_marginTop="14dp"
+                android:id="@+id/etPassword"
+                android:layout_below="@+id/etEmail"
+                android:layout_alignLeft="@+id/etAge"
+                android:layout_alignStart="@+id/etAge" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Email"
+                android:ems="10"
+                android:layout_marginTop="17dp"
+                android:id="@+id/etEmail"
+                android:layout_gravity="center"
+                android:layout_below="@+id/etUserName"
+                android:layout_alignLeft="@+id/etPassword"
+                android:layout_alignStart="@+id/etPassword" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:hint="Age"
+                android:id="@+id/etAge"
+                android:layout_below="@+id/etPassword"
+                android:layout_alignLeft="@+id/etHobbies"
+                android:layout_alignStart="@+id/etHobbies"
+                android:layout_marginTop="19dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Hobbies"
+                android:ems="10"
+                android:layout_marginTop="27dp"
+                android:id="@+id/etHobbies"
+                android:layout_below="@+id/etAge"
+                android:layout_alignLeft="@+id/etUserName"
+                android:layout_alignStart="@+id/etUserName" />
+
+            <RadioGroup
+                android:id="@+id/rgGender"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/etHobbies"
+                android:layout_alignLeft="@+id/etHobbies"
+                android:layout_alignStart="@+id/etHobbies">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    />
+
+                <RadioButton
+                    android:text="Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etHobbies"
+                    android:layout_alignLeft="@+id/radioGroup"
+                    android:layout_alignStart="@+id/radioGroup"
+                    android:layout_marginTop="34dp"
+                    android:id="@+id/rbMale" />
+
+                <RadioButton
+                    android:text="Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etHobbies"
+                    android:layout_alignLeft="@+id/radioGroup"
+                    android:layout_alignStart="@+id/radioGroup"
+                    android:layout_marginTop="34dp"
+                    android:id="@+id/rbFemale" />
+
+            </RadioGroup>
+            <Button
+                android:text="Create Free Account"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:id="@+id/btnRegister"
+                android:layout_below="@+id/rgGender"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ProgressBar
+                android:id="@+id/pbLoading"
+                android:visibility="gone"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

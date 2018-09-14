@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2DB95E</color>
+    <color name="colorPrimaryDark">#26994E</color>
+    <color name="colorAccent">#292929</color>
+    <color name="profile_background_male">#2B85B2</color>
+    <color name="profile_background_female">#ffa3eb</color>
+    <color name="profile_background_red">#FF0909</color>
+    <color name="profile_background_orange">#FF5B09</color>
+    <color name="profile_background_yellow">#FFEF4C</color>
+    <color name="profile_background_green">#1DE94F</color>
+    <color name="profile_background_blue">#35DFDA</color>
+    <color name="profile_background_purple">#603DFC</color>
+    <color name="profile_background_black">#000000</color>
+</resources>
